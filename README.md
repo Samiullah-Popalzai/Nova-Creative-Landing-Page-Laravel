@@ -1,58 +1,169 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Nova Creative Landing Page — Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A responsive creative agency landing page built with Laravel, Blade, HTML, and CSS as part of my practical full-stack learning journey.
 
-## About Laravel
+## Preview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Full Page
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Nova Creative Full Page](screenshots/full-page.jpeg)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Hero Section
 
-## Learning Laravel
+![Nova Creative Hero Section](screenshots/hero-section.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## About the Project
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Nova Creative is a fictional creative digital agency landing page designed to practice building a complete responsive website with Laravel.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+The project focuses on creating a polished frontend while using Laravel to handle the application structure and page routing.
 
-## Agentic Development
+This is the Laravel version of the Nova Creative landing page. I am also building the same project with Express.js to better understand how different backend frameworks approach a similar web application.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## Features
 
-```bash
-composer require laravel/boost --dev
+- Responsive landing page
+- Hero section
+- About section
+- Services section
+- Selected work section
+- Creative process section
+- Call-to-action section
+- Contact section
+- Footer
+- Responsive navigation
+- Mobile, tablet, and desktop layouts
+- Custom favicon
+- Semantic HTML structure
+- Custom CSS styling
 
-php artisan boost:install
+## Tech Stack
+
+- Laravel
+- PHP
+- Blade
+- HTML5
+- CSS3
+
+No frontend frameworks such as Bootstrap or Tailwind CSS are used.
+
+## Project Structure
+
+```text
+Nova-Creative-Landing-Page-Laravel/
+├── app/
+│   └── Http/
+│       └── Controllers/
+│           └── PageController.php
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       └── favicon.png
+├── resources/
+│   └── views/
+│       └── home.blade.php
+├── routes/
+│   └── web.php
+├── screenshots/
+│   ├── full-page.jpeg
+│   └── hero-section.png
+├── LICENSE
+└── README.md
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## Getting Started
 
-## Contributing
+Clone the repository:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+git clone https://github.com/Samiullah-Popalzai/Nova-Creative-Landing-Page-Laravel.git
+```
 
-## Code of Conduct
+Go into the project directory:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+cd Nova-Creative-Landing-Page-Laravel
+```
 
-## Security Vulnerabilities
+Install PHP dependencies:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+composer install
+```
+
+Create the environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate the application key:
+
+```bash
+php artisan key:generate
+```
+
+Start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Learning Goals
+
+This project is part of my ongoing practice in full-stack web development.
+
+The main goals are:
+
+- Practice Laravel project structure
+- Work with Laravel routes
+- Create and use controllers
+- Render Blade views
+- Serve CSS and other public assets
+- Build responsive layouts with HTML and CSS
+- Practice semantic HTML
+- Improve frontend structure and styling
+- Understand how Laravel handles a simple web page
+
+## Related Project
+
+The same landing page is also implemented using Express.js.
+
+**Express.js version:**
+
+https://github.com/Samiullah-Popalzai/Nova-Creative-Landing-Page-Express.js
+
+Building the same project in both Laravel and Express.js helps me compare their approaches while keeping the frontend concept similar.
+
+## Author
+
+**Samiullah Popalzai**
+
+Full Stack Engineer & WordPress Developer
+Kabul, Afghanistan
+
+GitHub:
+https://github.com/Samiullah-Popalzai
+
+LinkedIn:
+https://linkedin.com/in/samiullah-popalzai/
+
+Portfolio:
+https://samiullah-popalzai.github.io
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Copyright © 2026 Samiullah Popalzai.
+
+All rights reserved.
+
+This repository is publicly available for viewing and educational or evaluation purposes, including portfolio and job application review.
+
+The code may not be copied, modified, distributed, published, sublicensed, sold, or reused in other projects without prior written permission from the copyright holder.
